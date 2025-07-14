@@ -6,8 +6,8 @@
 
 <table>
 <tr>
-<td><img src="season1.png" alt="Seasonal Analysis 1" width="400"/></td>
-<td><img src="season2.png" alt="Seasonal Analysis 2" width="400"/></td>
+<td><img src="docs/season1.png" alt="Seasonal Analysis 1" width="400"/></td>
+<td><img src="docs/season2.png" alt="Seasonal Analysis 2" width="400"/></td>
 </tr>
 </table>
 
