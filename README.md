@@ -15,7 +15,7 @@
 
 ## Abstract
 
-This project presents an extension of the Engle-Granger-Hylleberg-Lee (EGHL) seasonal cointegration methodology from quarterly to monthly frequency. The standard EGHL approach, originally designed for quarterly data, tests for cointegration relationships at seasonal frequencies by decomposing the seasonal difference operator into its constituent roots. This work adapts the methodology to handle monthly data by extending the seasonal difference operator to (1-L¹²) and implementing the corresponding 12 seasonal frequencies.
+This project presents an extension of the Engle-Granger-Hylleberg-Lee (EGHL) seasonal cointegration methodology from quarterly to monthly frequency. The standard EGHL approach, originally designed for quarterly data, tests for cointegration relationships at seasonal frequencies by decomposing the seasonal difference operator into its constituent roots. This work adapts the methodology to handle monthly data by extending the seasonal difference operator to a higher frequency and implementing the corresponding 12 seasonal frequencies.
 
 ---
 
