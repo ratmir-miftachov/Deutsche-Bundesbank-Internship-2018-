@@ -131,11 +131,9 @@ dmypy.json
 *.Rproj
 
 # Generated files
-*.png
 *.jpg
 *.jpeg
 *.gif
-*.pdf
 
 # IDE
 .vscode/
