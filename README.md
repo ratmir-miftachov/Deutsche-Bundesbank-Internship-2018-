@@ -15,11 +15,7 @@
 
 ## Abstract
 
-This project presents an extension of the Engle-Granger-Hylleberg-Lee (EGHL) seasonal cointegration methodology from quarterly to monthly frequency. The standard EGHL approach, originally designed for quarterly data, tests for cointegration relationships at seasonal frequencies by decomposing the seasonal difference operator (1-L⁴) into its constituent roots. This work adapts the methodology to handle monthly data by extending the seasonal difference operator to (1-L¹²) and implementing the corresponding 12 seasonal frequencies.
-
-The monthly extension requires significant theoretical and computational adaptations. The factorization of (1-L¹²) yields multiple complex seasonal frequencies that must be tested individually for unit roots and cointegration relationships. This research develops the complete statistical framework including: (1) HEGY-type tests for seasonal unit roots at all 12 monthly frequencies, (2) EGHL cointegration tests adapted for monthly seasonal patterns, (3) automatic lag selection procedures for optimal model specification, and (4) Monte Carlo simulation methods for generating critical values.
-
-The methodology is implemented in both R and Python, providing researchers with robust tools for analyzing seasonal economic relationships at monthly frequency. Applications include tourism expenditure relationships, production-sales dynamics, energy consumption patterns, and agricultural commodity price linkages. The enhanced temporal resolution enables detection of more nuanced seasonal cointegration patterns that are masked in quarterly analysis, offering valuable insights for economic policy and forecasting.
+This project presents an extension of the Engle-Granger-Hylleberg-Lee (EGHL) seasonal cointegration methodology from quarterly to monthly frequency. The standard EGHL approach, originally designed for quarterly data, tests for cointegration relationships at seasonal frequencies by decomposing the seasonal difference operator into its constituent roots. This work adapts the methodology to handle monthly data by extending the seasonal difference operator to (1-L¹²) and implementing the corresponding 12 seasonal frequencies.
 
 ---
 
@@ -49,43 +45,9 @@ Deutsche-Bundesbank-Internship-2018-/
 
 ---
 
-## Quick Start
-
-**Python:**
-```bash
-cd python_implementation
-pip install -r requirements.txt
-cd ../examples && python python_example.py
-```
-
-**R:**
-```bash
-R -e "install.packages('smooth')" 
-# Then: source("r_implementation/scoint_monthly.R")
-```
-
 ---
 ---
 
-## Methodology Overview
-
-### Theoretical Framework
-
-The implementation extends the **Engle-Granger-Hylleberg-Lee (EGHL)** seasonal cointegration test from quarterly (4 frequencies) to **monthly (12 frequencies)** data:
-
-**Monthly Seasonal Difference Operator:**
-```
-(1 - L¹²) = (1 - L)(1 + L)(1 + L²)(1 + L + L²)(1 - L + L²)(1 + √3L + L²)(1 - √3L + L²)
-```
-
-**Tested Frequencies:**
-1. **Frequency 0**: Long-run/annual relationship
-2. **Frequency π (6/12)**: Semi-annual patterns
-3. **Frequencies π/2, 3π/2**: Quarterly patterns  
-4. **Frequencies 2π/3, 4π/3**: Tri-annual patterns
-5. **Frequencies π/3, 5π/3**: Bi-monthly patterns
-6. **Frequencies 5π/6, 7π/6**: Five-month patterns
-7. **Frequencies π/6, 11π/6**: Monthly patterns
 
 ### Statistical Tests
 
@@ -99,14 +61,6 @@ The implementation extends the **Engle-Granger-Hylleberg-Lee (EGHL)** seasonal c
 - Uses **8 specialized filters** for cointegration analysis
 - Monte Carlo simulation for critical value generation
 
-### Key Features
-
-- **Comprehensive Frequency Coverage**: Tests all 12 monthly seasonal frequencies
-- **Automatic Lag Selection**: Statistical procedures for optimal model specification
-- **Robust Implementation**: Handles near-singular matrices and numerical stability
-- **Dual Language Support**: Complete implementations in both R and Python
-- **Sample Data Generation**: Built-in utilities for testing and validation
-
 ---
 
 ## Applications
@@ -117,16 +71,6 @@ The monthly seasonal cointegration test is particularly valuable for:
 - Seasonal tourism demand relationships between countries/regions
 - Monthly visitor flow patterns and expenditure analysis
 - Tourism policy impact assessment at monthly frequency
-
-### 🏭 **Industrial Analysis**
-- Production-sales relationships with monthly seasonal components
-- Supply chain dynamics and inventory management
-- Monthly capacity utilization patterns
-
-### ⚡ **Energy Economics**
-- Monthly energy consumption patterns (heating vs cooling)
-- Seasonal electricity demand relationships
-- Renewable energy integration analysis
 
 ### 🌾 **Agricultural Economics**
 - Commodity price relationships with monthly harvest cycles
